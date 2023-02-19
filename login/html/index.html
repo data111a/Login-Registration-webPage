@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/login/style/loginStyle.css">
+    <title>Login</title>
+</head>
+<body>
+    <main>
+        <div class="videoDiv">
+            <video class="backgroundVideo" loop autoplay muted>
+                <source src="/login/videos/background.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="mainContent mainContentLogin">
+            <div class="inputsField inputsFieldLogin">
+                <div class="LoginInputDiv mailInputDiv">
+                    <span class="text textUsername">Email : </span><input class="input inputUsername" type="email" id="inputUsername" placeholder="Email/Username"required>
+                </div>
+                <div class="LoginInputDiv passwordInputDiv">
+                    <span class="text textPassword">Password : </span><input class="input inputPassword" type="password" id="inputPassword" placeholder="Password" required>
+                </div>
+            </div>
+            <div class="checkMarkDiv">
+                <input type="checkbox" id="keepLoggedIn" name="keepLoggedIn" value="keep">
+                <label for="keepLoggedIn">Keep me Logged in</label>
+            </div>
+            <div class="loginDiv">
+                <input type="submit" value="login" id="LoginBtn">
+            </div>
+            <div class="notificationDiv">
+                <p>Don't have one? <a href="/registration/html/index.html">Create here</a></p>
+            </div>
+       </div> 
+    </main>
+    <script src="/login/app/app.js"></script>
+</body>
+</html>
